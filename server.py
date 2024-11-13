@@ -31,7 +31,7 @@ def handle_client(client_socket):
 
 
 def start_server():
-     """
+    """
     Starts the server to listen for incoming client connections.
 
     This function creates a TCP socket, binds it to the specified address and port,
@@ -54,7 +54,10 @@ def start_server():
     print("Server listening on localhost:5000")
 
     while True:
-        client_socket, addr = server_socket.accept()
+        try:
+            client_socket, addr = server_socket.accept()
+        except Exception as e:
+            print(f"Error accepting connection: {e}")
         print(f"Connection established with {addr}")
         client_handler = threading.Thread(target=handle_client, args=(client_socket,))  # noqa: E501
         client_handler.start()
