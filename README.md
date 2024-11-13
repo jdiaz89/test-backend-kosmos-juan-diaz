@@ -70,3 +70,16 @@ macOS/Linux:
 
 
 #
+
+
+### Tests
+
+The `tests` directory contains unit tests for the project. Each test file corresponds to a module in the main project. You can run the tests using the following command from the root of the project:
+
+bash
+
+python -m unittest discover -s tests
+
+
+
+This command will automatically discover and run all test files that start with `test_` in the `tests` directory.
