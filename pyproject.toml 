@@ -1,0 +1,14 @@
+[flake8]
+exclude = lib, bin, .venv, build, dist
+
+
+[tool.black]
+extend-exclude = '''
+/(
+    lib
+    | bin
+)/
+'''
+
+[tool.isort]
+skip = ["lib", "bin", ".venv", "build", "dist"]
