@@ -69,34 +69,4 @@ macOS/Linux:
    pip install -r requirements.txt
 
 
-## Execution
-
-### Server
-1. Open a terminal.
-2. Navigate to the directory where `server.py` is located.
-3. Run the server with:
-   ```bash
-   python server.py 
-   
-   or 
-   python3 server.py 
-   ```
-
-### Customer
-1. Open another terminal.
-2. Navigate to the directory where `client.py` is located.
-3. Run the client with:
-   ```bash
-   python client.py
-
-   or
-
-   python3 client.py
-   ```
-
-## Manual Tests
-1. **Send a Normal Message:**
-   - Enter a message into the client and verify that the server responds in all caps.
-   
-2. **Send "DESCONEXION":**
-   - Enter "DESCONEXION" on the client and verify that the connection
+#
